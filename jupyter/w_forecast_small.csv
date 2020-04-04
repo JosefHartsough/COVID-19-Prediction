@@ -1,0 +1,145 @@
+date,region,min,max
+27/02/2020,"American Samoa, US",6.5,15.2
+28/02/2020,"American Samoa, US",3.8,10.8
+29/02/2020,"American Samoa, US",4.6,12.2
+01/03/2020,"American Samoa, US",5.4,13.8
+02/03/2020,"American Samoa, US",6,15.1
+03/03/2020,"American Samoa, US",6.8,15.6
+04/03/2020,"American Samoa, US",3.2,10
+05/03/2020,"American Samoa, US",2.1,9.1
+06/03/2020,"American Samoa, US",2.7,10.2
+07/03/2020,"American Samoa, US",3.5,13
+08/03/2020,"American Samoa, US",5,14.8
+09/03/2020,"American Samoa, US",1.3,5.3
+10/03/2020,"American Samoa, US",2.3,10.4
+11/03/2020,"American Samoa, US",3.9,14.3
+12/03/2020,"American Samoa, US",5.4,14.6
+13/03/2020,"American Samoa, US",6.8,16.8
+27/02/2020,"Guam, US",14.8,26.1
+28/02/2020,"Guam, US",15,27
+29/02/2020,"Guam, US",14.9,27.7
+01/03/2020,"Guam, US",17.3,28.4
+02/03/2020,"Guam, US",18,28.8
+03/03/2020,"Guam, US",18.7,27.9
+04/03/2020,"Guam, US",16.5,26.9
+05/03/2020,"Guam, US",17,29.7
+06/03/2020,"Guam, US",17.9,31.6
+07/03/2020,"Guam, US",10.8,21.7
+08/03/2020,"Guam, US",9.5,21.1
+09/03/2020,"Guam, US",11,23.7
+10/03/2020,"Guam, US",12.3,23.1
+11/03/2020,"Guam, US",13.8,24.8
+12/03/2020,"Guam, US",15.5,26.9
+13/03/2020,"Guam, US",17.3,28.1
+27/02/2020,"Northern Mariana Islands, US",5.5,10.5
+28/02/2020,"Northern Mariana Islands, US",4.5,9.9
+29/02/2020,"Northern Mariana Islands, US",6.2,13.3
+01/03/2020,"Northern Mariana Islands, US",8.9,15.5
+02/03/2020,"Northern Mariana Islands, US",8.2,12.3
+03/03/2020,"Northern Mariana Islands, US",9.3,14.8
+04/03/2020,"Northern Mariana Islands, US",10.6,16.5
+05/03/2020,"Northern Mariana Islands, US",7.2,13.2
+06/03/2020,"Northern Mariana Islands, US",5.5,11.8
+07/03/2020,"Northern Mariana Islands, US",6.9,13.8
+08/03/2020,"Northern Mariana Islands, US",9.1,15.6
+09/03/2020,"Northern Mariana Islands, US",8.8,17.5
+10/03/2020,"Northern Mariana Islands, US",0.3,8.8
+11/03/2020,"Northern Mariana Islands, US",0.5,5.1
+12/03/2020,"Northern Mariana Islands, US",5.1,11.5
+13/03/2020,"Northern Mariana Islands, US",7.5,12.9
+18/02/2020,"Puerto Rico, US",20,29.6
+19/02/2020,"Puerto Rico, US",19.6,29.2
+20/02/2020,"Puerto Rico, US",18,21.5
+21/02/2020,"Puerto Rico, US",18.8,23.3
+22/02/2020,"Puerto Rico, US",19.1,22.9
+23/02/2020,"Puerto Rico, US",19,24.8
+24/02/2020,"Puerto Rico, US",17.8,24.9
+25/02/2020,"Puerto Rico, US",18.3,26.2
+26/02/2020,"Puerto Rico, US",19.8,32.4
+27/02/2020,"Puerto Rico, US",20.7,27.6
+27/02/2020,"Puerto Rico, US",19.8,23
+28/02/2020,"Puerto Rico, US",20.2,27.4
+28/02/2020,"Puerto Rico, US",16.7,23.4
+29/02/2020,"Puerto Rico, US",19.3,22.7
+29/02/2020,"Puerto Rico, US",18.6,24.7
+01/03/2020,"Puerto Rico, US",18.6,22.5
+01/03/2020,"Puerto Rico, US",18.5,25.8
+02/03/2020,"Puerto Rico, US",17.6,21.6
+02/03/2020,"Puerto Rico, US",19.4,23.4
+03/03/2020,"Puerto Rico, US",20.3,22.5
+03/03/2020,"Puerto Rico, US",20.1,23.3
+04/03/2020,"Puerto Rico, US",18.1,20.8
+04/03/2020,"Puerto Rico, US",21,23
+05/03/2020,"Puerto Rico, US",19.3,22.3
+06/03/2020,"Puerto Rico, US",18.9,27
+07/03/2020,"Puerto Rico, US",20,26.5
+08/03/2020,"Puerto Rico, US",18.8,21.6
+09/03/2020,"Puerto Rico, US",18.5,21
+10/03/2020,"Puerto Rico, US",18.4,20.9
+11/03/2020,"Puerto Rico, US",19.1,22.7
+12/03/2020,"Puerto Rico, US",20.5,22.6
+13/03/2020,"Puerto Rico, US",20.9,23.6
+18/02/2020,"Virgin Islands, US",24.9,33.7
+19/02/2020,"Virgin Islands, US",25.1,36.7
+20/02/2020,"Virgin Islands, US",25.1,36.5
+21/02/2020,"Virgin Islands, US",24,31.2
+22/02/2020,"Virgin Islands, US",22,26.7
+23/02/2020,"Virgin Islands, US",21.9,24.9
+24/02/2020,"Virgin Islands, US",20.8,23.6
+25/02/2020,"Virgin Islands, US",21,30.9
+26/02/2020,"Virgin Islands, US",23.1,32
+27/02/2020,"Virgin Islands, US",23.9,34.4
+27/02/2020,"Virgin Islands, US",25.1,35.1
+28/02/2020,"Virgin Islands, US",24.6,31.3
+28/02/2020,"Virgin Islands, US",23.6,34.1
+29/02/2020,"Virgin Islands, US",24.5,31.3
+29/02/2020,"Virgin Islands, US",23,30.9
+01/03/2020,"Virgin Islands, US",23.1,28.6
+01/03/2020,"Virgin Islands, US",21,33.1
+02/03/2020,"Virgin Islands, US",23.5,29.2
+02/03/2020,"Virgin Islands, US",22.7,36.8
+03/03/2020,"Virgin Islands, US",22.1,28.3
+03/03/2020,"Virgin Islands, US",24.1,31.5
+04/03/2020,"Virgin Islands, US",24.2,29
+04/03/2020,"Virgin Islands, US",23.8,30
+05/03/2020,"Virgin Islands, US",23.2,27.9
+06/03/2020,"Virgin Islands, US",22.6,24.9
+07/03/2020,"Virgin Islands, US",21.8,30.3
+08/03/2020,"Virgin Islands, US",22.8,29.6
+09/03/2020,"Virgin Islands, US",23.1,29.7
+10/03/2020,"Virgin Islands, US",22.9,28.5
+11/03/2020,"Virgin Islands, US",22.6,28.6
+12/03/2020,"Virgin Islands, US",23.6,28
+13/03/2020,"Virgin Islands, US",23.8,28.1
+18/02/2020,"Autauga, Alabama, US",12.9,21.4
+19/02/2020,"Autauga, Alabama, US",10.2,19.8
+20/02/2020,"Autauga, Alabama, US",9.2,21.1
+21/02/2020,"Autauga, Alabama, US",10.1,22.1
+22/02/2020,"Autauga, Alabama, US",9.3,27.8
+23/02/2020,"Autauga, Alabama, US",10.8,30.1
+24/02/2020,"Autauga, Alabama, US",18.7,34.8
+25/02/2020,"Autauga, Alabama, US",14.1,33.5
+26/02/2020,"Autauga, Alabama, US",10.7,20.8
+27/02/2020,"Autauga, Alabama, US",10.4,23
+27/02/2020,"Autauga, Alabama, US",10.7,19.4
+28/02/2020,"Autauga, Alabama, US",10,17.6
+28/02/2020,"Autauga, Alabama, US",10.7,22.3
+29/02/2020,"Autauga, Alabama, US",9.3,19.3
+29/02/2020,"Autauga, Alabama, US",10,28.7
+01/03/2020,"Autauga, Alabama, US",11.8,25.9
+01/03/2020,"Autauga, Alabama, US",12.9,25.6
+02/03/2020,"Autauga, Alabama, US",15.9,29.3
+02/03/2020,"Autauga, Alabama, US",10.6,19
+03/03/2020,"Autauga, Alabama, US",13.4,28.4
+03/03/2020,"Autauga, Alabama, US",8,20.1
+04/03/2020,"Autauga, Alabama, US",14.5,22.4
+04/03/2020,"Autauga, Alabama, US",9.8,28.5
+05/03/2020,"Autauga, Alabama, US",12.4,28.1
+06/03/2020,"Autauga, Alabama, US",11.5,22.3
+07/03/2020,"Autauga, Alabama, US",11.3,19.9
+08/03/2020,"Autauga, Alabama, US",9.5,20.3
+09/03/2020,"Autauga, Alabama, US",12.5,22.7
+10/03/2020,"Autauga, Alabama, US",16.5,28.9
+11/03/2020,"Autauga, Alabama, US",15,25.8
+12/03/2020,"Autauga, Alabama, US",15.5,27.6
+13/03/2020,"Autauga, Alabama, US",15.6,25.7
