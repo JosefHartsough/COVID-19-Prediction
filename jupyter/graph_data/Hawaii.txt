@@ -1,0 +1,7 @@
+'Hawaii_Hawaii_US',
+'Honolulu_Hawaii_US',
+'Kalawao_Hawaii_US',
+'Kauai_Hawaii_US',
+'Maui_Hawaii_US',
+'Out_of_HI_Hawaii_US',
+'Unassigned_Hawaii_US',

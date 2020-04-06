@@ -1,0 +1,7 @@
+'Bristol_Rhode_Island_US',
+'Kent_Rhode_Island_US',
+'Newport_Rhode_Island_US',
+'Providence_Rhode_Island_US',
+'Washington_Rhode_Island_US',
+'Out_of_RI_Rhode_Island_US',
+'Unassigned_Rhode_Island_US',

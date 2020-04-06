@@ -1,0 +1,195 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 536870912 bytes for Failed to commit area from 0x0000025e52000000 to 0x0000025e72000000 of length 536870912.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (c:/BuildAgent/work/217e3383f1c67e47/src/hotspot/os/windows/os_windows.cpp:3296), pid=11108, tid=16336
+#
+# JRE version:  (11.0.6+8) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.6+8-b765.1, mixed mode, tiered, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -ea -Xms32G water.H2OApp -ip 127.0.0.1 -web_ip 127.0.0.1 -baseport 54321 -ice_root C:\Users\Owner\AppData\Local\Temp\tmp_l30ajgx -name H2O_from_python_Owner_j9wcwu -log_level INFO
+
+Host: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 8 cores, 11G,  Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+Time: Sun Apr  5 19:28:20 2020 Eastern Daylight Time elapsed time: 1 seconds (0d 0h 0m 1s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002562cd61000):  JavaThread "Unknown thread" [_thread_in_vm, id=16336, stack(0x000000a881100000,0x000000a881200000)]
+
+Stack: [0x000000a881100000,0x000000a881200000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5de31a]  os::platform_print_native_stack+0xca  (os_windows_x86.cpp:369)
+V  [jvm.dll+0x710ae5]  VMError::report+0xa85  (vmerror.cpp:699)
+V  [jvm.dll+0x712005]  VMError::report_and_die+0x605  (vmerror.cpp:1483)
+V  [jvm.dll+0x7126b3]  VMError::report_and_die+0x43  (vmerror.cpp:1291)
+V  [jvm.dll+0x23e3a8]  report_vm_out_of_memory+0x68  (debug.cpp:282)
+V  [jvm.dll+0x5db814]  os::pd_commit_memory_or_exit+0x64  (os_windows.cpp:3296)
+V  [jvm.dll+0x5d0a35]  os::commit_memory_or_exit+0x25  (os.cpp:1786)
+V  [jvm.dll+0x2faeeb]  G1PageBasedVirtualSpace::commit_preferred_pages+0x6b  (g1pagebasedvirtualspace.cpp:140)
+V  [jvm.dll+0x2fae5a]  G1PageBasedVirtualSpace::commit_internal+0xfa  (g1pagebasedvirtualspace.cpp:170)
+V  [jvm.dll+0x2fad32]  G1PageBasedVirtualSpace::commit+0x92  (g1pagebasedvirtualspace.cpp:202)
+V  [jvm.dll+0x2ffc06]  G1RegionsLargerThanCommitSizeMapper::commit_regions+0x46  (g1regiontospacemapper.cpp:73)
+V  [jvm.dll+0x348495]  HeapRegionManager::commit_regions+0xa5  (heapregionmanager.cpp:86)
+V  [jvm.dll+0x348b86]  HeapRegionManager::make_regions_available+0x56  (heapregionmanager.cpp:124)
+V  [jvm.dll+0x348583]  HeapRegionManager::expand_at+0x83  (heapregionmanager.cpp:187)
+V  [jvm.dll+0x2d57b8]  G1CollectedHeap::expand+0xb8  (g1collectedheap.cpp:1347)
+V  [jvm.dll+0x2d6957]  G1CollectedHeap::initialize+0x5f7  (g1collectedheap.cpp:1663)
+V  [jvm.dll+0x6ef8a7]  Universe::initialize_heap+0x37  (universe.cpp:764)
+V  [jvm.dll+0x6f109c]  universe_init+0x3c  (universe.cpp:685)
+V  [jvm.dll+0x355a79]  init_globals+0x59  (init.cpp:111)
+V  [jvm.dll+0x6d49ee]  Threads::create_vm+0x2be  (thread.cpp:3733)
+V  [jvm.dll+0x3bf0a3]  JNI_CreateJavaVM_inner+0x93  (jni.cpp:3954)
+V  [jvm.dll+0x3c15c1]  JNI_CreateJavaVM+0x11  (jni.cpp:4045)
+C  [jli.dll+0x5363]  JavaMain+0x113  (java.c:414)
+C  [ucrtbase.dll+0x20e72]
+C  [KERNEL32.DLL+0x17bd4]
+C  [ntdll.dll+0x6ced1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000002562ab45f00, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000002562cd78000 GCTaskThread "GC Thread#0" [stack: 0x000000a881200000,0x000000a881300000] [id=424]
+  0x000002562cd9c000 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000a881300000,0x000000a881400000] [id=24200]
+  0x000002562cd9f800 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000a881400000,0x000000a881500000] [id=21396]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffaa7356027]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000002562cd5fe90] Heap_lock - owner thread: 0x000002562cd61000
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (2 events):
+Event: 0.008 Loaded shared library C:\Users\Owner\anaconda3\Library\bin\zip.dll
+Event: 0.009 Loaded shared library C:\Users\Owner\anaconda3\Library\bin\jimage.dll
+
+
+Dynamic libraries:
+0x00007ff7c9bc0000 - 0x00007ff7c9bca000 	C:\Users\Owner\anaconda3\Library\bin\java.exe
+0x00007ffb11980000 - 0x00007ffb11b70000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffb038a0000 - 0x00007ffb038b5000 	C:\Program Files\AVAST Software\Avast\aswhook.dll
+0x00007ffb106a0000 - 0x00007ffb10752000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffb0e940000 - 0x00007ffb0ebe3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffb0f060000 - 0x00007ffb0f15a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffafb700000 - 0x00007ffafb719000 	C:\Users\Owner\anaconda3\Library\bin\jli.dll
+0x00007ffb10920000 - 0x00007ffb10ab4000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffb0e910000 - 0x00007ffb0e931000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffb10ba0000 - 0x00007ffb10bc6000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffb0ec70000 - 0x00007ffb0ee04000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffb0eec0000 - 0x00007ffb0ef5e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffafb590000 - 0x00007ffafb5a7000 	C:\Users\Owner\anaconda3\Library\bin\VCRUNTIME140.dll
+0x00007ffb04df0000 - 0x00007ffb05075000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.720_none_e6beb5c51314836b\COMCTL32.dll
+0x00007ffb10880000 - 0x00007ffb1091e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffb0fc70000 - 0x00007ffb0ffa6000 	C:\WINDOWS\System32\combase.dll
+0x00007ffb10760000 - 0x00007ffb10880000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffb0ef60000 - 0x00007ffb0efe0000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffb11550000 - 0x00007ffb1157e000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffae7550000 - 0x00007ffae75ed000 	C:\Users\Owner\anaconda3\Library\bin\msvcp140.dll
+0x00007ffaa7070000 - 0x00007ffaa7b2d000 	C:\Users\Owner\anaconda3\Library\bin\server\jvm.dll
+0x00007ffb11120000 - 0x00007ffb111c3000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffb0fb20000 - 0x00007ffb0fbb7000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffb112a0000 - 0x00007ffb112a8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffb0d640000 - 0x00007ffb0d649000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffb114e0000 - 0x00007ffb1154f000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffb0be70000 - 0x00007ffb0be94000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffb07dd0000 - 0x00007ffb07dda000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffb0aa00000 - 0x00007ffb0aa2d000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffb0ec20000 - 0x00007ffb0ec6a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffb0e850000 - 0x00007ffb0e861000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffafb570000 - 0x00007ffafb581000 	C:\Users\Owner\anaconda3\Library\bin\verify.dll
+0x00007ffb0d2c0000 - 0x00007ffb0d4b4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffb07a30000 - 0x00007ffb07a5a000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffafa5a0000 - 0x00007ffafa5c9000 	C:\Users\Owner\anaconda3\Library\bin\java.dll
+0x00007ffafa580000 - 0x00007ffafa598000 	C:\Users\Owner\anaconda3\Library\bin\zip.dll
+0x00007ffb096e0000 - 0x00007ffb096eb000 	C:\Users\Owner\anaconda3\Library\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Owner\anaconda3\Library\bin;C:\WINDOWS\SYSTEM32;C:\Program Files\AVAST Software\Avast;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.720_none_e6beb5c51314836b;C:\Users\Owner\anaconda3\Library\bin\server
+
+VM Arguments:
+jvm_args: -ea -Xms32G 
+java_command: water.H2OApp -ip 127.0.0.1 -web_ip 127.0.0.1 -baseport 54321 -ice_root C:\Users\Owner\AppData\Local\Temp\tmp_l30ajgx -name H2O_from_python_Owner_j9wcwu -log_level INFO
+java_class_path (initial): C:\Users\Owner\anaconda3\lib\site-packages\h2o\backend\bin\h2o.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 16777216                                  {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 34359738368                               {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 34359738368                               {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 16777216                                  {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5836300                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122910970                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122910970                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Users\Owner\anaconda3\Library
+CLASSPATH=.;
+PATH=C:\Users\Owner\anaconda3;C:\Users\Owner\anaconda3\Library\mingw-w64\bin;C:\Users\Owner\anaconda3\Library\usr\bin;C:\Users\Owner\anaconda3\Library\bin;C:\Users\Owner\anaconda3\Scripts;C:\Users\Owner\anaconda3\bin;C:\Users\Owner\anaconda3\condabin;C:\Rtools\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Users\Owner\AppData\Local\Programs\Python\Python38-32;C:\Users\Owner\AppData\Local\Programs\Python\Python38-32\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\PuTTY;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk-13.0.2\bin;C:\Program Files\Java\jre1.8.0_241\bin;C:\Program Files\Amazon\AWSCLI\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Users\Owner\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Users\Owner\anaconda3;C:\Users\Owner\anaconda3\Library\mingw-w64\bin;C:\Users\Owner\anaconda3\Library\usr\bin;C:\Users\Owner\anaconda3\Library\bin;C:\Users\Owner\anaconda3\Scripts;C:\Users\Owner\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\Owner\AppData\Local\Programs\Python\Python38-32;C:\Users\Owner\.cargo\bin;C:\Users\Owner\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Owner\AppData\Local\Programs\Python\Python37;C:\Ruby25-x64\bin;C:\Users\Owner\AppData\Local\Microsoft\WindowsApps;C:\Users\Owner\AppData\Local\Yarn\bin;C:\Program Files\JetBrains\RubyMine 2019.1\bin;C:\Users\Owner\AppData\Local\atom\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;C:\Users\Owner\AppData\Roaming\npm;C:\Program Files\R\R-3.6.3\bin\x64;C:\Program Files\R\R-3.6.3\modules\x64
+USERNAME=Owner
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, system-wide physical 12183M (4228M free)
+TotalPageFile size 49047M (AvailPageFile size 131M)
+current process WorkingSet (physical memory assigned to process): 35M, peak: 35M
+current process commit charge ("private bytes"): 32916M, peak: 33405M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.6+8-b765.1) for windows-amd64 JRE (11.0.6+8-b765.1), built on Feb 22 2020 04:18:15 by "" with MS VC++ 14.0 (VS2015)
+
+END.
