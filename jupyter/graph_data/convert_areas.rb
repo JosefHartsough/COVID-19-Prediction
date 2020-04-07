@@ -1,51 +1,21 @@
 #!/usr/bin/env ruby
-
-# converts the old requirements format to the new one
-
-# Get commandline arguments
 ARGV.each do|a|
   puts "Argument: #{a}"
-
   if File.exist?(a)
-
-    # Read contents of the file.
     contents = File.read(a);
-
-    # Create backup file name
     bak = a + '.bak'
-    # Make original file the backup.
     File.rename(a, bak)
-
-    # Flag used to determine whether the file should be modified.
-    prev_modified = false
-
-    # Create array based on lines in the file.
     contents = contents.lines.to_a
-
-    # create a variable to keep track of the line number for printing and debugging purposes
-    line_number = 1
-
     contents = contents.map do | line |
       line = line.chomp! + "\n"
       unmodified_line = line
-      if line.include?(" ")
-        line.gsub!(" ", "_")
-      end
-
-      if line.include?(",")
-        line.gsub!(",", "_")
-      end
-
-      if line.include?("__")
-        line.gsub!("__", "_")
-      end
-
+      line.gsub!(" ", "_") if line.include?(" ")
+      line.gsub!(",", "_") if line.include?(",")
+      line.gsub!("__", "_") if line.include?("__")
       line.chomp!
       line = "\'" + line + "\',\n"
-
       line
     end
-    # pp contents
     states = [
       "Alabama", "Alaska", "American Samoa", "Arizona", "Arkansas", "California", "Colorado",
       "Connecticut", "Delaware", "Florida", "Georgia", "Guam", "Hawaii",
@@ -67,7 +37,6 @@ ARGV.each do|a|
       text = k + ".txt"
       File.open(text, 'w') {|file| file.write(v) }
     end
-
     # Convert from array to string
     contents = contents.join("")
     # Write the modified contents to the file.

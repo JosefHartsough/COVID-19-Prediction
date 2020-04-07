@@ -1,0 +1,13 @@
+You will have to install jupyter and anaconda.
+In the anaconda terminal, navigate to where
+the ipynb file is.
+Then do:            jupyter notebook US_COVID19.ipynb
+
+You then just run each of the sections of code.
+If you happen to not have the needed package, you can
+install most of them in pip. We found that there were
+issues with that and we had to install some of them
+with "conda". For example, we did: "conda install rpy2".
+
+Once everything is working, you just step through the
+ipynb file and you should be able to see all of our results.
